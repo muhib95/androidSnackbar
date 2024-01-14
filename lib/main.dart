@@ -79,9 +79,21 @@ class HomeActivity extends StatelessWidget {
           ],
         ),
       ),
-      body: Center(
-        child: Image.asset("assets/images/download.jpeg")
-      ),
+      body: Container(
+        height: 250,
+        width: 200,
+alignment: Alignment.topCenter,
+margin: const EdgeInsets.all(30),
+padding: const EdgeInsets.all(40),
+        decoration:  BoxDecoration(
+          color: Colors.blue,
+          border: Border.all(color: Colors.black,width: 10)
+        ),
+        child: Center(
+          child: Image.asset("assets/images/download.jpeg"),
+        ),
+
+      )
     );
   }
 }
